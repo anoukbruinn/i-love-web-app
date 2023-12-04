@@ -1,0 +1,13 @@
+:root {
+	--Bg-Dark-Blue: hotpink;
+
+	--Yellow-Primary: rgb(173, 50, 184);
+	--Blue-Secondary: #3dbae1;
+
+	--White: #ffffff;
+	--Black: #000;
+
+	--Apercu-Font: 'Helvetica', sans-serif;
+	--Paragraph-Font: 'Helvetica', sans-serif;
+	--Header-Font: 'Helvetica', sans-serif;
+}
