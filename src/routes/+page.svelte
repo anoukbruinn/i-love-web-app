@@ -13,21 +13,37 @@
 				<li>Weergave</li>
 				<li>Ga</li>
 				<li>Venster</li>
-				<li>Help</li>
+				<li>Hulp</li>
 			</ul>
 		</section>
 
-		<section class="right"></section>
+		<section class="right">
+			<ul>
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+				<li>d</li>
+				<li>e</li>
+				<li>f</li>
+				<li>g</li>
+			</ul>
+		</section>
 	</header>
+
+	<main>
+		<section class="Map">
+			<img class="Map-blue" src="src/lib/assets/desktop.webp" alt="" />
+		</section>
+	</main>
 
 	<footer>
 		<section class="dock">
 			<div class="box">
-				<div class="item"></div>
+				<img class="item" src="src/lib/assets/Chrome-logo.png" alt="chrome" />
 			</div>
 
 			<div class="box">
-				<div class="item"></div>
+				<img class="item" src="src/lib/assets/github-logo.png" alt="github" />
 			</div>
 
 			<div class="box">
@@ -55,13 +71,16 @@
 	}
 
 	body {
-		background-color: hotpink;
+		background-color: rgb(224, 224, 114);
+		position: relative;
+		height: 100vh;
 	}
 
 	/* HEADER  */
 
 	header {
 		background-color: purple;
+		display: flex;
 	}
 
 	.logo {
@@ -82,20 +101,38 @@
 		font-weight: bold;
 	}
 
+	section.right {
+		display: flex;
+		float: right;
+	}
+
 	/* DOCK */
 
+	footer {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 0px;
+		margin-top: auto;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
 	.dock {
-		padding: 20px;
+		padding: 15px;
 		width: max-content;
 		border: 0.5 px lightgray;
 		display: flex;
-		gap: 30px;
+		gap: 20px;
+		background-color: rgb(152, 151, 151);
+		border-radius: 40px;
 	}
 
 	.box {
 		size: 100px;
-		width: 80px;
-		height: 80px;
+		width: 100px;
+		height: 100px;
 		transition: transform 200ms;
 		padding: 10px;
 	}
@@ -106,23 +143,32 @@
 	}
 
 	.box:nth-child(1) .item {
-		background-color: black;
+		border-radius: 10px;
 	}
 
 	.box:nth-child(2) .item {
-		background-color: rgb(0, 0, 0);
+		
+		border-radius: 10px;
 	}
 
 	.box:nth-child(3) .item {
 		background-color: black;
+		border-radius: 10px;
 	}
 
 	.box:nth-child(4) .item {
 		background-color: black;
+		border-radius: 10px;
 	}
 
 	.box:nth-child(5) .item {
 		background-color: black;
+		border-radius: 10px;
+	}
+
+	.box:nth-child(6) .item {
+		background-color: black;
+		border-radius: 10px;
 	}
 
 	.box:hover {
@@ -132,5 +178,15 @@
 	.box:hover + .box,
 	.box:has(+ .box:hover) {
 		transform: scale(1.2) translateY (-15px);
+	}
+
+	/* ----MAP----- */
+
+	img.Map-blue {
+		width: 100px;
+		display: flex;
+		float: right;
+		margin-right: 30px;
+		margin-top: 30px;
 	}
 </style>
