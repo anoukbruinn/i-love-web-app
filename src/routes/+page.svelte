@@ -68,7 +68,9 @@
 <style>
 	* {
 		box-sizing: border-box;
+		margin: 0%;
 	}
+	
 
 	body {
 		background-color: rgb(224, 224, 114);
@@ -81,6 +83,7 @@
 	header {
 		background-color: purple;
 		display: flex;
+		margin: 0%;
 	}
 
 	.logo {
@@ -147,7 +150,6 @@
 	}
 
 	.box:nth-child(2) .item {
-		
 		border-radius: 10px;
 	}
 
